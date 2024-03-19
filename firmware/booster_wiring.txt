@@ -1,0 +1,27 @@
+
+booster wiring:
+
+pico w       max14870
+
+GPIO 2       DIR pin 2
++5V          PWM pin 1
+GND          GND pin 5 and 6
+
+max14870
+
+pin 6 GND    12V negative power supply
+pin 7 VIN    12V positive power supply
+pin 8 M2     dcc track
+pin 9 M1     dcc track
+
+N/C no connect
+
+ +5V   1 PWM     VM 10 N/C
+GPIO2  2 DIR      M1 9 - DCC TRACK
+N/C    3 /FAULT   M2 8 - DCC TRACK
+N/C    4 /EN     VIN 7 - 12V positive (n scale)
+GND    5         GND 6 - 12V negative
+
+https://www.pololu.com/product/2961
+
+
